@@ -1,52 +1,14 @@
-import DisplayComponent from "./Component/DisplayComponent";
-import "./App.css";
+import React from "react";
+import Todo from "./ToduList/Todo";
 
-function App() {
-  const Data = [
-    {
-      Id: 1,
-      Name: "Ashfakur",
-      Age: 25,
-      Course_Name: "Full Stact Dev",
-      Institute: "HTGT",
-      Traner_Name: "Sir Ayush",
-      Mentor_Name: "Sir Ayush",
-    },
-    {
-      Id: 2,
-      Name: "Abishek",
-      Age: 25,
-      Course_Name: "Full Stact Dev",
-      Institute: "HTGT",
-      Traner_Name: "Sir Ayush",
-      Mentor_Name: "Sir Ayush",
-    },
-
-    {
-      Id: 3,
-      Name: "Pradeep",
-      Age: 21,
-      Course_Name: "Full Stact Dev",
-      Institute: "HTGT",
-      Traner_Name: "Sir Ayush",
-      Mentor_Name: "Sir Ayush",
-    },
-
-    {
-      Id: 4,
-      Name: "Mayur Goutam",
-      Age: 25,
-      Course_Name: "Full Stact Dev",
-      Institute: "HTGT",
-      Traner_Name: "Sir Ayush",
-      Mentor_Name: "Sir Ayush",
-    },
-  ];
+export default function App() {
   return (
     <>
-      <DisplayComponent Student={Data} />
+      <center>
+        <h1>This Is Evulation 5</h1>
+      </center>
+
+      <Todo />
     </>
   );
 }
-
-export default App;
